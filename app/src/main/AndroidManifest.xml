@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:tools="http://schemas.android.com/tools" package="com.practice.joshua.kotlinpractice">
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.practice.joshua.kotlinpractice">
 
     <application
             android:allowBackup="true"
@@ -8,7 +9,10 @@
             android:label="@string/app_name"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
-            android:theme="@style/AppTheme" tools:ignore="GoogleAppIndexingWarning">
+            android:theme="@style/AppTheme"
+            tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".DetailActivity">
+        </activity>
         <activity
                 android:name=".Main2Activity"
                 android:label="Main2Activity"
@@ -22,8 +26,8 @@
         <activity
                 android:name=".MainActivity"
                 android:label="@string/app_name"
-                android:theme="@style/AppTheme.NoActionBar"
-                android:parentActivityName=".Main2Activity"/>
+                android:parentActivityName=".Main2Activity"
+                android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>
